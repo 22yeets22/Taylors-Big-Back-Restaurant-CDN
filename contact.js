@@ -23,14 +23,15 @@ script.onload = function() {
 
         if (isNaN(rating) || rating < 0 || rating > 10) {
             invalidForm("Please provide a valid rating.");
+            return;
         }
-
         if (name.length == 0) {
             invalidForm("Please fill out your name.");
+            return;
         }
-
         if (improvements.length == 0) {
             invalidForm("Please tell us how to improve!");
+            return;
         }
 
         Swal.fire({
