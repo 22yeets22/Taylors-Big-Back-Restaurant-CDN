@@ -17,7 +17,7 @@ function invalidForm(msg) {
 // Once the script loads, add an event listener to the form-submit button
 script.onload = function() {
     document.getElementById('form-submit').addEventListener('click', function() {
-        let rating = document.getElementById("rating").value;
+        let rating = parseInt(document.getElementById("rating").value.trim());
         let name = document.getElementById("name").value.trim();
         let improvements = document.getElementById("improvements").value.trim();
 
