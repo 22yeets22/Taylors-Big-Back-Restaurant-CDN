@@ -1,0 +1,1 @@
+const fileName="example.js";var script=document.createElement("script");script.setAttribute("src",`https://raw.githubusercontent.com/22yeets22/Taylors-Big-Back-Restaurant-CDN/refs/heads/main/${fileName}.js`),document.head.appendChild(script);
